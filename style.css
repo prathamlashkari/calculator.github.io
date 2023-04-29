@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+
+#input{
+    width: 85%;
+    padding: 15px;
+    margin: 10px;
+    background: transparent;
+    text-align: right;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    border-radius: 13px;
+    width: 60px;
+    height: 60px;
+    margin: 10px 25px;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.equal{
+    background-color: orange;
+}
+
+.operator{
+    color: green;
+}
+
+
+ /* making the desing responsives  */
+
+ @media  only screen and (max-width: 500px) and (min-width: 300px)  {
+
+    button {
+        width: 45px;
+        height: 47px;
+        margin: 10px 5vw;
+        padding: 9px;
+        background: transparent;
+        font-size: 15px;
+    
+      }
+
+      .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+ }
